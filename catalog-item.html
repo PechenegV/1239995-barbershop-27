@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="css\style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header>
-		<img src="img\svg\logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-		<nav>
+		<nav class="main-navigation">
+			<img src="img\svg\logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="news.html">Новости</a></li>
 				<li><a href="price.html">Прайс-лист</a></li>
-				<li><a href="catalog.html">Магазин</a></li>
+				<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>	
 		<ul class="user-navigation">
@@ -25,29 +25,36 @@
 		</ul>
 		</nav>
 	</header>
-	<main>
-		<h1>Набор для путешествий «Baxter of California»</h1>
-			<ul>
+	<main class="container">
+		<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
+			<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="catalog.html">Магазин</a></li>	
 			<li><a href="catalog.html">Средства для ухода</a></li>
-			<li>Набор для путешествий «Baxter of California»</li>	
+			<li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>	
 		</ul>
-		<section>
+		<section class="product-photos">
 			<h2 class="visually-hidden">Изображение товара</h2>
-			<ul>
-				<li><img src="img\product-big.jpg" width="460" height="498" alt="Фото всего набора"></li>
+			<p class="product-photo-full">
+				<img src="img\product-big.jpg" width="460" height="498" alt="Фото всего набора">
+			</p>	
+			<ul class="product-photo-preview">
 				<li><img src="img\product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
 				<li><img src="img\product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
 				<li><img src="img\product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
 			</ul>
 		</section>
-		<section>
+		<section class="product-info">
 			<h2 class="visually-hidden">Описание товара</h2>
-			<p>Есть в наличии</p>
-			<p>Артикул: dexter-ae</p>
-			<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-			<p>2 900 ₽<a href="#">Купить</a></p>
+			<div class="product-description">
+				<p class="product-availability">Есть в наличии</p>
+				<p class="product-article">Артикул: dexter-ae</p>
+			</div>
+			<p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+			<p class="product-price">
+				<b>2 900 ₽</b>
+				<a class="button" href="#">Купить</a>
+			</p>
 			<h3>В набор входят:</h3>
 			<ul>
 				<li>Средство для умывания (50мл)</li>
@@ -58,49 +65,58 @@
 			</ul>
 		</section>
 	</main>
-		<footer>
-  	  	<p>
+		<footer class="main-footer">
+  	  	<p class="footer-contacts">
   	  		Барбершоп "Бородинский"<br>
   	  		Адрес: г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
   	  		<a href="">Как нас найти?</a><br>
   	  		Телефон: +7(495)666-02-66
   	  	</p>
-  	  	<div>
+  	  	<div class="footer-social">
   	  		<p>Давайте дружить</p>
   	  		<ul>
-  	  			<li><a href="https://vk.com/feed">Вконтакте</a></li>
-  	  			<li><a href="https://facebook.com">Фейсбук</a></li>
-  	  			<li><a href="whttps://instagram.com">Инстаграм</a></li>
+  	  			<li>
+              <a class="social-button" href="https://vk.com/feed">Вконтакте</a>
+            </li>
+  	  			<li>
+              <a class="social-button" href="https://facebook.com">Фейсбук</a>
+            </li>
+  	  			<li>
+              <a class="social-button" href="whttps://instagram.com">Инстаграм</a>
+            </li>
   	  		</ul>
   	  	</div>
-  	  	<p>Разработано:<a href="https://up.htmlacademy.ru/htmlcss/27">HTML Academy</a></p>
-  	  </footer>
-  	  <section>
+  	  	<p class="footer-copyright">Разработано:
+          <a class="button" href="https://up.htmlacademy.ru/htmlcss/27">HTML Academy</a>
+        </p>
+  	</footer>
+  	  <section class="modal modal-login">
   	  	<h2>Личный кабинет</h2>
-  	  	<p>Введите пожалуйста свой логин и пароль</p>
-  	  	<form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-          	<label for="user-login">Логин</label>
-          	<input id="user-login" type="email" name="login" placeholder="email@example.com">
-          </p>
-          <p>
-          	<label for="user-password">Пароль</label>
-          	<input id="user-password" type="password" name="password" placeholder="••••••••">
-          </p>
-          <p>
-          	<label>
-          		<input type="checkbox" name="remember">
-          		Запомните меня
-          	</label>
-         	 <a href="#">Я забыл пароль</a>
-          </p>
-          <button type="submit">
-            Войти
-          </button>
-        </form>
-  	  	<button type="button">
-  	  	Закрыть
-  	  </button>
-  	  </section>
+  	  		<p>Введите пожалуйста свой логин и пароль</p>
+  	  		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+	          <p>
+	          <label class="visually-hidden" for="user-login">Логин</label>
+	          <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="email@example.com">
+	          </p>
+	          <p>
+	          <label class="visually-hidden" for="user-password">Пароль</label>
+	          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="••••••••">
+	          </p>
+	          <p class="login-password-info">
+	          <label>
+	          <input type="checkbox" name="remember" class="visually-hidden">
+	          <span class="checkbox-indicator"></span>
+	          Запомните меня
+	          </label>
+	          <a class="restore" href="#">Я забыл пароль</a>
+	          </p>
+	          <button class="button" type="submit">
+	            Войти
+	          </button>
+	        </form>
+	  	  	<button class="modal-close" type="button">
+	        Закрыть
+	        </button>
+  	 </section>
 </body>
 </html>
